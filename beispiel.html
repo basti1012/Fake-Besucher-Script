@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Fake Besucher Script Test</title>
+<script src="fake_besucher.js"></script>
+<style>
+body{
+     height:100%;
+     display:flex;
+     flex-direction:column;
+     width:100%;
+}
+nav{
+     height:100px;
+     background:blue;
+     color:white;
+     font-size:50px;
+     text-align:center;
+}
+main{
+     height:100vh;
+     text-align:center;
+     font-size:100px;
+}
+footer{
+     display:flex;
+     background:grey;
+}
+#left{
+     flex:2;
+     font-size:60px;
+     color:whizte;
+}
+#right{
+     flex:1;
+}
+</style>
+</head>
+<body>
+    <nav>Navigation</nav>
+    <main>
+        Content
+    </main>
+    <footer>
+         <div id="left">
+              Footer
+         </div>
+         <div id="right">
+         </div>
+    </footer>
+<script>
+a1='3000';// Sekunden * 1000 reloadzeit counter
+a2='22-07-2020';
+a3=500;////gesamtzähler bekommt die zahl am tag dazu.Wird minutengenau ausgerechnet
+a4=10;// AktualiesierungsZeit wird immer langsamer um X millisekunde. 0 = Deaktiviert
+a5='#right';//Counter mit createelemnt erstellen , oder  in ein element einfügen gebe daür zb ( #deineid, .deine_classe, main:nth-child(1)) ein oder lasse es leer dann wird es erzeugt
+a6=true;//Standart Style laden =true , oder eigenen Style einbinden dann hier auf false setzen damit der Style ausgeschaltet ist
+fake_besucherzahler(a1,a2,a3,a4,a5,a6);
+</script>
+</body>
+</html>
