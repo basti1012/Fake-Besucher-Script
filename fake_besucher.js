@@ -17,7 +17,7 @@ head_.innerHTML=`
 }
 #counter_basti1012{
    width:200px;
-   position:absolute;
+   position:relative;
    margin:0 auto;
    border:2px solid black;
    margin-top:50px;
@@ -165,7 +165,7 @@ if(ti!=''){
   consolelog=true;
   if(consolelog==true){
     console.log('%c Danke \n das sie das \n Fake-Besucher-Script \nbenutzen \n' ,'background:blue; color: white; font-size: 18px; padding: 3px;width:100%;display:block');
-    console.log('Klick %o to Website', 'http://anti-code.com');
+    console.log('Klick %o to Website', 'https://github.com/basti1012/Fake-Besucher-Script');
   }
 startdatum=startdatum.split("-");
 var newDate=startdatum[1]+"/"+startdatum[0]+"/"+startdatum[2];
